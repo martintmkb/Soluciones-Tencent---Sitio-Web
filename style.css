@@ -1,0 +1,152 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #071022;
+    color: #e6eef6;
+    margin: 0;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+header {
+    background-color: #0b2436;
+    padding: 10px 0;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    height: 500px;
+    width: 500px;
+    border: 5px solid #0b2436;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-right: 675px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#fotico {
+    height: auto;
+    width: auto;
+    margin-left: 675px;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.competencia {
+    background-color: #0b3b6f;
+    text-align: center;
+    border-radius: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 80px;
+    padding: 2px;
+}
+input {
+    padding: 3px;
+    margin-bottom: 20px;
+}
+#home {
+    padding: 50px;
+    margin-bottom: 30px;
+}
+
+#menuBtn {
+    background-color: #0b3b6f;
+    color: #e6eef6;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+.logo {
+    background-color: #0b3b6f;
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    padding: 0;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+#infoloca {
+    background-color: #0b3b6f;
+    border: 5px solid #0b2436;
+    text-align: center;
+    border-radius: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+#contacto {
+    background-color: #0b3b6f;
+    border: 5px solid #0b2436;
+    justify-content: center;
+    display: block;
+    text-align: center;
+    border-radius: 20px;
+    margin-left: 500px;
+    margin-right: 600px;
+    margin-top: 50px;
+    padding: 50px;
+}
+
+#enviarsolamente {
+    justify-content: center;
+    text-align: center;
+    display: block;
+}
+.btn, .cta {
+    background-color: #0b3b6f;
+    margin-top: 10px;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.hero {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.textoin {
+    text-align: center;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.catalogo {
+    margin-top: 100px;
+}
+.catalogo .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+footer {
+    background-color: #0b3b6f;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
