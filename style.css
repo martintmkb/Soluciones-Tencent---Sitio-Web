@@ -1,3 +1,4 @@
+/* Estilos generales del cuerpo: centrado, tipografia y colores principales del sitio */
 body {
     text-align: center;
     font-family: Arial, sans-serif;
@@ -5,20 +6,27 @@ body {
     color: #e6eef6;
     margin: 0;
 }
+
+/* Contenedor general que mantiene el contenido centrado */
 .container {
     width: 90%;
     margin: 0 auto;
 }
+
+/* Encabezado con color de fondo y separacion interna (padding) */
 header {
     background-color: #0b2436;
     padding: 10px 0;
 }
+
+/* Barra de navegacion */
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Estilos generales para imagenes: tamaño, borde y posicion */
 img {
     height: 500px;
     width: 500px;
@@ -28,9 +36,9 @@ img {
     margin-right: 675px;
     justify-content: center;
     text-align: center;
-    border-radius: 20px;
 }
 
+/* Imagen principal del producto con ajustes personalizados */
 #fotico {
     height: auto;
     width: auto;
@@ -39,7 +47,7 @@ img {
     text-align: center;
 }
 
-
+/* Bloque con informacion adicional como mision, vision y valores */
 .competencia {
     background-color: #0b3b6f;
     text-align: center;
@@ -49,15 +57,20 @@ img {
     margin-top: 80px;
     padding: 2px;
 }
+
+/* Inputs basicos del formulario */
 input {
     padding: 3px;
     margin-bottom: 20px;
 }
+
+/* Seccion principal del inicio */
 #home {
     padding: 50px;
     margin-bottom: 30px;
 }
 
+/* Boton del menu para version movil */
 #menuBtn {
     background-color: #0b3b6f;
     color: #e6eef6;
@@ -65,6 +78,8 @@ input {
     border-radius: 10px;
     padding: 10px;
 }
+
+/* Estilo del logo cuadrado con la letra T */
 .logo {
     background-color: #0b3b6f;
     color: white;
@@ -75,17 +90,22 @@ input {
     justify-content: center;
     border-radius: 8px;
 }
+
+/* Lista del menu de navegación en formato horizontal */
 nav ul {
     display: flex;
     list-style: none;
     gap: 10px;
     padding: 0;
 }
+
+/* Enlaces del menu */
 nav a {
     color: white;
     text-decoration: none;
 }
 
+/* Contenedor de la seccion “Quienes somos” y “Catalogo” */
 #infoloca {
     background-color: #0b3b6f;
     border: 5px solid #0b2436;
@@ -97,6 +117,7 @@ nav a {
     padding: 20px;
 }
 
+/* Contenedor del formulario de contacto */
 #contacto {
     background-color: #0b3b6f;
     border: 5px solid #0b2436;
@@ -110,11 +131,14 @@ nav a {
     padding: 50px;
 }
 
+/* Boton enviar centrado dentro de su bloque */
 #enviarsolamente {
     justify-content: center;
     text-align: center;
     display: block;
 }
+
+/* Botones generales del sitio (CTA y botones de acciones) */
 .btn, .cta {
     background-color: #0b3b6f;
     margin-top: 10px;
@@ -123,30 +147,97 @@ nav a {
     border-radius: 5px;
     text-decoration: none;
 }
+
+/* Seccion principal del hero o bienvenida */
 .hero {
     text-align: center;
     padding: 30px 0;
 }
 
+/* Bloque de texto antes del formulario */
 .textoin {
     text-align: center;
     margin-top: 100px;
     padding: 20px;
 }
 
+/* Seccion del catalogo con separacion superior */
 .catalogo {
     margin-top: 100px;
 }
+
+/* Distribucion en cuadrícula para los productos del catalogo */
 .catalogo .product-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
 }
 
+/* Footer de pagina del sitio */
 footer {
     background-color: #0b3b6f;
     padding: 10px;
     margin-top: 50px;
     margin-bottom: 10px;
     text-align: center;
+}
+
+/*RESPONSIVE AÑADIDO*/
+
+/* Ajustes generales para pantallas medianas (tablets y celulares horizontales) */
+@media (max-width: 900px) {
+
+    /* Imagenes mas chicas y centradas */
+    img, #fotico {
+        width: 80%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    /* Contenedores adaptados al ancho de pantalla */
+    #infoloca, .competencia {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /* Formulario centrado y mas ancho */
+    #contacto {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        padding: 20px;
+    }
+
+    /* Navegacion vertical en pantallas pequenas */
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+/* Ajustes para pantallas muy chicas (celulares) */
+@media (max-width: 600px) {
+
+    /* Catalogo en una sola columna */
+    .catalogo .product-list {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contenedores mas centrados */
+    #infoloca, .competencia, #contacto {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Textos reducidos para mejor lectura */
+    h1, h2, h3 {
+        font-size: 1.2rem;
+    }
+
+    /* Botones centrados y en bloque */
+    .btn, .cta {
+        display: block;
+        margin: 10px auto;
+    }
 }
